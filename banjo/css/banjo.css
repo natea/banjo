@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    margin: 0;
+    padding: 0;
+    display: block;
+    border: none;
+}
+
+
+iframe#banjocontrolpanel {
+    background: #EEF;
+    width: 100% !important;
+}
+
+.highlighted {
+    border: 2px;
+    solid: red;
+}
+
+.ui-layout-resizer { /* all 'resizer-bars' */ 
+		background: #DDD; 
+	} 
+
+
+.ui-dialog { font-size: .6em; }
+
+#inspectElementDialog #currentElement,
+#inspectElementDialog #parentElement { font-size: .8em; }
+

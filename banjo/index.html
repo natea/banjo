@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Banjo - Deliverance theming made easy</title>
+	
+	<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.7.1.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery.layout.min.js"></script>
+    <script type="text/javascript" src="js/banjo.js"></script>
+    <link rel="stylesheet" href="css/banjo.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/smoothness/jquery-ui-1.7.1.custom.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    
+</head>
+
+<body>
+
+    <iframe id="delivsource" name="delivsource" src="/?deliv_log&amp;deliv_notheme"></iframe>
+    <iframe id="delivtarget" name="delivtarget" src="/static/index.html?deliv_notheme"></iframe>
+    <iframe id="banjocontrolpanel" src="controlpanel.html"></iframe>
+    
+    <div id="inspectSourceElementDialog" title="Inspect Element">
+        <form>
+            <div>Current Element: <a href="#" id="currentElement"></a></div>
+            <div>Parent Element: <a href="#" id="parentElement"></a></div>
+            <div id="DOMtree"><div>  
+            
+            <fieldset>
+                <legend>Action to perform</legend>
+                <input type="radio" value="replace" name="action" id="replaceaction" checked="checked" /><label for="replaceaction">Replace</label><br />
+                <input type="radio" value="drop" name="action" id="dropaction" /><label for="dropaction">Drop</label><br />
+                <input type="radio" value="prepend" name="action"  id="prependaction" /><label for="prependaction">Prepend</label><br />
+                <input type="radio" value="append" name="action" id="appendaction" /><label for="appendaction">Append</label><br />
+            </fieldset>
+            <input type="checkbox" name="children" id="sourcechildren" checked="checked" /><label for="sourcechildren">Children</label><br />
+
+        </form>
+    </div>
+
+    <div id="inspectTargetElementDialog" title="Inspect Element">
+        <form>
+            <div>Current Element: <a href="#" id="currentElement"></a></div>
+            <div>Parent Element: <a href="#" id="parentElement"></a></div>        
+            <input type="checkbox" name="children" id="targetchildren" checked="checked" /><label for="sourcechildren">Children</label><br />
+
+        </form>
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+TODO
+----
+
+ * Do some sort of nth-child calculation to get as specific a selector as possible.
+
+ * Click on parts of a rule to show the target and source elements in above panes.
+ 
+ * Load the jQuery and jQuery UI code from Google's CDN
+   http://encosia.com/2009/10/11/do-you-know-about-this-undocumented-google-cdn-feature/
+ 
+ * When the Children box is checked, highlight the element's children in the pane to  
+   confirm that these elements are the ones you want to act on.
+   
+ * Make the preview tab a button, which when clicked opens up the Deliverance-themed
+   site in a lightbox. Currently, with the preview as a tab that is loaded via
+   Ajax, the other tabs disappear as soon as you start navigating the site.
+   
+ * Implement the rules table as a jqGrid - http://www.trirand.com/jqgridwiki/
+   Populate the table rows using the pre-defined rules in the rules.xml file.
+ 
+ * Refresh button for panes
+
+ * Highlight item or container after first item is selected, and grey out the rest of the screen.
+    
+ * Create some sort of drag-n-drop ui flow for rule creation.
+    There is a way to do it between iframes using prototype:
+    http://bluestudios.co.uk/blog/sandbox/iframe/iframe.html
+    demo: http://bluestudios.co.uk/blog/sandbox/iframe/iframe.html
+    (unfortunately, it doesn't seem to be a feature of jQuery yet.
+    See http://groups.google.com/group/jquery-ui/browse_thread/thread/188706c9633b35f4)
+    
+ * Write rules to rules.xml file (the editing tool provided by Deliverance already does this so it might just be a matter of hooking into that.)
+ 
+ * Dropdown for each pane with all ids for quick selection (provide quickjump to common elements in Plone that you want to insert into your theme)
+
+ * For the file browser, provide a nicer looking directory tree:
+    See http://www.webappers.com/2008/04/01/fully-interactive-jquery-file-tree/
+    Also http://paulbakaus.com/lab/css/filemanager/
+    
+ * In the theme pane, provide a way to upload a new theme (HTML, CSS files) or point to a remote URL.
+ 
+ * In the content pane, provide a way to point to a remote URL (i.e. not localhost)
+ 
+ * In the theme pane, provide a pre-defined set of themes to choose from, with rules.xml files already created for each one.
+ 
+DONE
+----
+ 
+ * Add preview tab to control panel to view resulting theme [DONE]
+ * Add an advanced tab to expose an editing window for rules.xml [DONE]
+ * Add a file browser tab to expose the file browser [DONE]
+ * Make the iframes resizable so that they work on a 
+   wide variety of monitor sizes. [DONE]
+ * Add a ruleset tab displaying rules [DONE]
+ * Generate Deliverance rules from selectors [DONE]
+
+ 
+NOTES
+-----
+If we have a need for alerts, this plugin looks quite good: http://abeautifulsite.net/notebook/87
+
+Code to highlight certain parts of the screen
+http://enhance.qd-creative.co.uk/demo/seekAttention/
+
+Provide contextual menu when you click on an element
+http://abeautifulsite.net/notebook/80
+   
